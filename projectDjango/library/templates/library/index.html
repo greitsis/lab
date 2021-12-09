@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    {% load bootstrap5 %}
+    {% bootstrap_javascript %}
+    {% bootstrap_css %}
+    <title>Главная - Доска объявлений</title>
+</head>
+
+<body>
+    <h1>Список залов</h1>
+    {% for lh in lhs %}
+    <div>
+        <h2>{{ lh.short_Name }}</h2>
+        <p>{{ lh.full_Name }}</p>
+        <p>{{  }}</p>
+    </div>
+    {% endfor %}
+</body>
+
+</html>
